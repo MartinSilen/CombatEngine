@@ -1,0 +1,6 @@
+C:\Users\Sergei\RiderProjects\CombatEngine\CombatEngineCore\bin\Debug\CombatEngineCore.dll
+C:\Users\Sergei\RiderProjects\CombatEngine\CombatEngineCore\bin\Debug\CombatEngineCore.pdb
+C:\Users\Sergei\RiderProjects\CombatEngine\CombatEngineCore\obj\Debug\CombatEngineCore.csproj.AssemblyReference.cache
+C:\Users\Sergei\RiderProjects\CombatEngine\CombatEngineCore\obj\Debug\CombatEngineCore.csproj.CoreCompileInputs.cache
+C:\Users\Sergei\RiderProjects\CombatEngine\CombatEngineCore\obj\Debug\CombatEngineCore.dll
+C:\Users\Sergei\RiderProjects\CombatEngine\CombatEngineCore\obj\Debug\CombatEngineCore.pdb

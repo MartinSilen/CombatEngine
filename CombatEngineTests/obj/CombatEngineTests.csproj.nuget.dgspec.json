@@ -1,0 +1,115 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Sergei\\RiderProjects\\CombatEngine\\CombatEngineTests\\CombatEngineTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Sergei\\RiderProjects\\CombatEngine\\CombatEngineCore\\CombatEngineCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sergei\\RiderProjects\\CombatEngine\\CombatEngineCore\\CombatEngineCore.csproj",
+        "projectName": "CombatEngineCore",
+        "projectPath": "C:\\Users\\Sergei\\RiderProjects\\CombatEngine\\CombatEngineCore\\CombatEngineCore.csproj",
+        "packagesPath": "C:\\Users\\Sergei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sergei\\RiderProjects\\CombatEngine\\CombatEngineCore\\obj\\",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Sergei\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net471": {}
+      }
+    },
+    "C:\\Users\\Sergei\\RiderProjects\\CombatEngine\\CombatEngineTests\\CombatEngineTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sergei\\RiderProjects\\CombatEngine\\CombatEngineTests\\CombatEngineTests.csproj",
+        "projectName": "CombatEngineTests",
+        "projectPath": "C:\\Users\\Sergei\\RiderProjects\\CombatEngine\\CombatEngineTests\\CombatEngineTests.csproj",
+        "packagesPath": "C:\\Users\\Sergei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sergei\\RiderProjects\\CombatEngine\\CombatEngineTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sergei\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Sergei\\RiderProjects\\CombatEngine\\CombatEngineCore\\CombatEngineCore.csproj": {
+                "projectPath": "C:\\Users\\Sergei\\RiderProjects\\CombatEngine\\CombatEngineCore\\CombatEngineCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.6.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.4.2, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

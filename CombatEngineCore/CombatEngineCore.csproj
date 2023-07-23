@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{15FD86E8-88AF-4EBA-A19C-3212B8FE8CA2}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>ClassLibrary1</RootNamespace>
+        <AssemblyName>CombatEngineCore</AssemblyName>
+        <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="CombatEngine\CombatEngine.cs" />
+        <Compile Include="CombatEngine\CombatState.cs" />
+        <Compile Include="CombatEngine\Implementations\CombatGoals\TestKillGoal.cs" />
+        <Compile Include="CombatEngine\Implementations\EmptyCombatAction.cs" />
+        <Compile Include="CombatEngine\Implementations\Enemies\GoblinGrunt.cs" />
+        <Compile Include="CombatEngine\Implementations\EnemyActions\TestAttack.cs" />
+        <Compile Include="CombatEngine\Implementations\Player.cs" />
+        <Compile Include="CombatEngine\Implementations\PlayerActions\TestPlayerAttack.cs" />
+        <Compile Include="CombatEngine\Implementations\StunnedCombatAction.cs" />
+        <Compile Include="CombatEngine\Interfaces\Enemy.cs" />
+        <Compile Include="CombatEngine\Interfaces\ICombatAction.cs" />
+        <Compile Include="CombatEngine\Interfaces\ICombatant.cs" />
+        <Compile Include="CombatEngine\Interfaces\ICombatGoal.cs" />
+        <Compile Include="CombatEngine\Interfaces\IEnemyAction.cs" />
+        <Compile Include="CombatEngine\Interfaces\IPassiveActor.cs" />
+        <Compile Include="CombatEngine\Interfaces\IStatusEffect.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="CombatEngine\CombatEngine.cs.meta" />
+      <Content Include="CombatEngine\CombatState.cs.meta" />
+      <Content Include="CombatEngine\Implementations.meta" />
+      <Content Include="CombatEngine\Implementations\EmptyCombatAction.cs.meta" />
+      <Content Include="CombatEngine\Implementations\Enemies.meta" />
+      <Content Include="CombatEngine\Implementations\Enemies\GoblinGrunt.cs.meta" />
+      <Content Include="CombatEngine\Implementations\EnemyActions.meta" />
+      <Content Include="CombatEngine\Implementations\EnemyActions\TestAttack.cs.meta" />
+      <Content Include="CombatEngine\Implementations\Player.cs.meta" />
+      <Content Include="CombatEngine\Implementations\PlayerActions.meta" />
+      <Content Include="CombatEngine\Implementations\StatusEffects.meta" />
+      <Content Include="CombatEngine\Implementations\StunnedCombatAction.cs.meta" />
+      <Content Include="CombatEngine\Interfaces.meta" />
+      <Content Include="CombatEngine\Interfaces\Enemy.cs.meta" />
+      <Content Include="CombatEngine\Interfaces\ICombatAction.cs.meta" />
+      <Content Include="CombatEngine\Interfaces\ICombatant.cs.meta" />
+      <Content Include="CombatEngine\Interfaces\ICombatGoal.cs.meta" />
+      <Content Include="CombatEngine\Interfaces\IEnemyAction.cs.meta" />
+      <Content Include="CombatEngine\Interfaces\IPassiveActor.cs.meta" />
+      <Content Include="CombatEngine\Interfaces\IStatusEffect.cs.meta" />
+      <Content Include="CombatEngine\StoryManager.cs.meta" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="CombatEngine\Implementations\StatusEffects" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
